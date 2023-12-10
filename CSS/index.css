@@ -1,0 +1,968 @@
+html {
+    scroll-behavior: smooth;
+}
+
+/* ----------------------------------------------------------------------------- */
+/* Loader ---------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------- */
+
+body{
+  scroll-behavior: smooth;
+  overflow: hidden;
+  margin: 0;
+}
+  
+#myLoading{
+  background-color: black;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  position: fixed;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  z-index: 999999999999999999999;
+}
+
+#loaderDiv{
+  margin: 0 0 2em;
+  width: 20%;
+  text-align: center;
+  padding: 1em;
+  margin: 0 auto 1rem;
+  display: inline-block;
+  vertical-align: top;
+}
+
+#loaderSize{
+  transform: scale(3);
+}
+
+/* ------------------------------------------------------------------------- */
+
+h1 , h2 , h3 , h4 , h5 , h6 {
+    font-family: 'Alegreya', serif;
+}
+
+.clear-both {
+    clear: both;
+}
+
+/* Nav Bar ----------------------------------------------------------------- */
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    right: 0px;
+    left: 0px;
+    top: 0px;
+}
+
+.navbar_img {
+    width: 60%;
+    float: left;
+}
+
+.navbar_img img {
+    margin: 5px 0 5px 30px;
+    width: 100px;
+}
+
+.navbar_content {
+    width: 40%;
+    display: inline-block;
+}
+
+.navbar_content ul {
+    list-style-type: none;
+    text-align: center;
+    margin: 5px 0;
+    padding: 0;
+}
+
+.navbar_content ul li {
+    text-align: center;
+    margin: 0 15px;
+    float: left;
+}
+
+.navbar_content ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Right Bar ----------------------------------------------------------------- */
+
+.right_bar {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    position: fixed;
+    padding: 5px;
+    width: 20px;
+    right: 0px;
+    top: 40vh;
+}
+
+.right_bar img {
+    padding-top: 10px;
+    width: 100%;
+    opacity: 0.7;
+}
+
+/* Main View ----------------------------------------------------------------- */
+
+.main_view {
+    background-image: url(../src/Images/Cover.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.main_view_fame {
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 100%;
+}
+
+.main_content {
+    text-align: center;
+    padding-top: 25vh;
+}
+
+.main_content h1 {
+    color: white;
+    font-size: 5rem;
+    margin: 1rem 0;
+}
+
+.main_content p {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.main_content button {
+    background-color: #8E7754;
+    border: solid white 2px;
+    border-radius: 15px;
+    margin: 3rem 1rem;
+    width: 150px;
+    height: 50px;
+}
+
+.main_content button a {
+    text-decoration: none;
+    font-size: 1.25rem;
+    color: white;
+}
+
+#btnContactUs{
+    background-color: transparent;
+}
+
+#btnContactUs:hover{
+    background-color: #8E7754;
+}
+
+/* Who We Are? ----------------------------------------------------------------- */
+
+.Who_we_are {
+    margin: 1rem 0px;
+    padding: 0 5%;
+}
+
+.Who_we_are_img {
+    width: 40%;
+    padding: 2rem 0;
+    float: left;
+}
+
+.Who_we_are_img img {
+    width: 100%;
+}
+
+.Who_we_are_content {
+    display: inline-block;
+    width: 50%;
+    padding: 7rem 5%;
+    text-align: left;
+}
+
+.Who_we_are_content h2 {
+    font-size: 2rem;
+}
+
+.Who_we_are_content p {
+    font-size: 1rem;
+    margin: 30px 0;
+}
+
+.Who_we_are_content ul li {
+    margin: 25px 0;
+}
+
+/* Our Location ----------------------------------------------------------------- */
+
+.our_location {
+    background-color: #f8f8f8;
+    margin: 1rem 0px;
+    padding: 0 5%;
+}
+
+.our_location_img {
+    width: 40%;
+    padding: 2rem 0;
+    float: right;
+}
+
+.our_location_img img {
+    width: 100%;
+}
+
+.our_location_content {
+    display: inline-block;
+    width: 50%;
+    padding: 7rem 5%;
+    text-align: left;
+}
+
+.our_location_content h2 {
+    font-size: 2rem;
+}
+
+.our_location_content p {
+    font-size: 1rem;
+    margin: 30px 0;
+}
+
+/* meals ----------------------------------------------------------------- */
+
+.meals {
+    text-align: center;
+    margin: 1rem 5%;
+}
+
+.meals h2 {
+    font-size: 2rem;
+}
+
+.meals h3 {
+    font-size: 1.5rem;
+}
+
+.meals p {
+    margin: 1.5rem 0;
+    font-size: 1rem;
+}
+
+.meal {
+    width: calc(94% / 3);
+    margin: 0 1%;
+    box-sizing: border-box;
+    float: left;
+}
+
+.inner {
+    text-align: center;
+    width: 100%;
+}
+
+.meal .inner img {
+    width: 100%;
+}
+
+/* Contact Information ------------------------------------------------------------- */
+
+.contact_information {
+    background-color: #f8f8f8;
+    margin: 1rem 0px;
+    padding: 0 5%;
+}
+
+.contact_information_map {
+    width: 45%;
+    padding: 3rem 0;
+    float: right;
+}
+
+.contact_information_map iframe {
+    width: 100%;
+}
+
+.contact_information_content {
+    display: inline-block;
+    width: 45%;
+    padding: 2.5rem 5%;
+    text-align: left;
+}
+
+.contact_information_content h2 {
+    font-size: 2rem;
+}
+
+.contact_information_content h3 {
+    font-size: 1.5rem;
+}
+
+.contact_information_content p {
+    font-size: 1rem;
+    margin: 30px 0;
+}
+
+.contact_information_content ul li {
+    margin: 40px 0;
+}
+
+.contact_information_content ul li a {
+    color: black;
+}
+
+/* Information ----------------------------------------------------------------- */
+
+.information {
+    background-color: #403D38;
+    padding: 0 5%;
+}
+
+.info {
+    box-sizing: border-box;
+    width: calc(84% / 4);
+    margin: 0 2%;
+    float: left;
+}
+
+.info_inner {
+    width: 100%;
+}
+
+.info_inner h3 {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.info_inner ul {
+    padding: 0;
+}
+
+.info_inner ul li {
+    padding: 10px 0;
+    font-size: 1rem;
+    color: gray;
+}
+
+.info_inner ul li a {
+    color: gray;
+}
+
+/* last ------------------------------------------------------------------------- */
+
+.last {
+    background-color: #353330;
+    width: 100%;
+}
+
+.last_content {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.last p {
+    text-align: center;
+    color: white;
+}
+
+/* media max-width:600px ------------------------------------------------------------------- */
+/* media max-width:600px ------------------------------------------------------------------- */
+/* media max-width:600px ------------------------------------------------------------------- */
+
+@media screen and (max-width:600px) {
+    html {
+        font-size: 14px;
+    }
+
+    /* Nav Bar ----------------------------------------------------------------- */
+
+    .navbar_content {
+        display: none;
+    }
+
+    .navbar_img img {
+        margin: 10px 1rem;
+        width: 100px;
+    }
+
+    /* Main View ----------------------------------------------------------------- */
+
+    .main_content {
+        box-sizing: border-box;
+        padding: 20vh 10%;
+    }
+
+    .main_content h1 {
+        font-size: 4rem;
+    }
+
+    .main_content button {
+        display: block;
+        margin: 3rem auto;
+    }
+
+    .main_content button a {
+        text-decoration: none;
+        font-size: 1.25rem;
+        color: white;
+    }
+
+    /* Who We Are? ----------------------------------------------------------------- */
+
+    .Who_we_are_img {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 2rem 0;
+        float: none;
+    }
+
+    .Who_we_are_img img {
+        width: 90%;
+        margin: 0 5%;
+        border-radius: 15px;
+    }
+
+    .Who_we_are_content {
+        width: 90%;
+        padding: 1rem 5%;
+        text-align: center;
+    }
+
+    .Who_we_are_content ul {
+        list-style-type: none;
+    }
+
+    /* Our Location ----------------------------------------------------------------- */
+
+    .our_location_img {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 2rem 0;
+        float: none;
+    }
+
+    .our_location_img img {
+        width: 90%;
+        margin: 0 5%;
+        border-radius: 15px;
+    }
+
+    .our_location_content {
+        width: 90%;
+        padding: 1rem 5%;
+        text-align: center;
+    }
+
+    /* meals ----------------------------------------------------------------- */
+
+    .meals {
+        text-align: center;
+        margin: 1rem 10%;
+    }
+
+    .meal {
+        width: 100%;
+        float: none;
+    }
+
+    .meal .inner img {
+        border-radius: 15px;
+    }
+
+    /* Contact Information --------------------------------------------------- */
+
+    .contact_information {
+        padding: 0 10%;
+    }
+
+    .contact_information_map {
+        float: none;
+        width: 100%;
+    }
+
+    .contact_information_map iframe {
+        border-radius: 15px;
+    }
+
+    .contact_information_content {
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    .contact_information_content ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    /* Information ----------------------------------------------------------------- */
+
+    .information {
+        padding: 5% 10%;
+    }
+
+    .info {
+        width: 100%;
+        margin: 0 0;
+        float: left;
+    }
+}
+
+/* media max-width:768px ------------------------------------------------------------------- */
+/* media max-width:768px ------------------------------------------------------------------- */
+/* media max-width:768px ------------------------------------------------------------------- */
+
+@media screen and (min-width:601px) and (max-width:768px) {
+
+    /* Nav Bar ----------------------------------------------------------------- */
+
+    .navbar_img {
+        width: 30%;
+    }
+
+    .navbar_img img {
+        margin: 10px 15%;
+        width: 100px;
+    }
+
+    .navbar_content {
+        width: 70%;
+    }
+
+    .navbar_content ul li {
+        margin: 0 3%;
+    }
+
+    /* Main View ----------------------------------------------------------------- */
+
+    .main_content {
+        box-sizing: border-box;
+        padding: 20vh 10%;
+    }
+
+    .main_content h1 {
+        font-size: 4rem;
+    }
+
+    .main_content button a {
+        text-decoration: none;
+        font-size: 1.25rem;
+        color: white;
+    }
+
+    /* Who We Are? ----------------------------------------------------------------- */
+
+    .Who_we_are_img {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 2rem 0;
+        float: none;
+    }
+
+    .Who_we_are_img img {
+        width: 70%;
+        margin: 0 15%;
+        border-radius: 15px;
+    }
+
+    .Who_we_are_content {
+        width: 90%;
+        padding: 1rem 5%;
+        text-align: center;
+    }
+
+    .Who_we_are_content ul {
+        list-style-type: none;
+    }
+
+    /* Our Location ------------------------------------------------------------ */
+
+    .our_location_img {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 2rem 0;
+        float: none;
+    }
+
+    .our_location_img img {
+        width: 70%;
+        margin: 0 15%;
+        border-radius: 15px;
+    }
+
+    .our_location_content {
+        width: 90%;
+        padding: 1rem 5%;
+        text-align: center;
+    }
+
+    /* meals ----------------------------------------------------------------- */
+
+    .meals {
+        text-align: center;
+        margin: 1rem 10%;
+    }
+
+    .meal {
+        width: 100%;
+        float: none;
+    }
+
+    .meal .inner img {
+        width: 70%;
+        padding: 0 15%;
+        border-radius: 15px;
+    }
+
+    /* Contact Information -------------------------------------------------------- */
+
+    .contact_information {
+        padding: 0 10%;
+    }
+
+    .contact_information_map {
+        float: none;
+        width: 100%;
+    }
+
+    .contact_information_map iframe {
+        border-radius: 15px;
+    }
+
+    .contact_information_content {
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    .contact_information_content ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    /* Information ----------------------------------------------------------------- */
+
+    .information {
+        padding: 5% 5%;
+    }
+
+    .info {
+        width: 42%;
+        margin: 0 4%;
+        float: left;
+    }
+}
+
+/* media max-width:993px ------------------------------------------------------------------- */
+/* media max-width:993px ------------------------------------------------------------------- */
+/* media max-width:993px ------------------------------------------------------------------- */
+
+@media screen and (min-width:769px) and (max-width:992px) {
+
+    /* Nav Bar -------------------------------------------------------------------- */
+
+    .navbar_img {
+        width: 40%;
+    }
+
+    .navbar_img img {
+        margin: 10px 15%;
+        width: 100px;
+    }
+
+    .navbar_content {
+        width: 60%;
+    }
+
+    .navbar_content ul li {
+        margin: 0 3%;
+    }
+
+    /* Main View ----------------------------------------------------------------- */
+
+    .main_content {
+        box-sizing: border-box;
+        padding: 20vh 10%;
+    }
+
+    .main_content h1 {
+        font-size: 4rem;
+    }
+
+    .main_content button a {
+        text-decoration: none;
+        font-size: 1.25rem;
+        color: white;
+    }
+
+    /* Who We Are? ----------------------------------------------------------------- */
+
+    .Who_we_are_img {
+        padding: 10% 0;
+    }
+
+    .Who_we_are_content {
+        padding: 2% 5%;
+    }
+
+    /* Our Location ----------------------------------------------------------------- */
+
+    .our_location_img {
+        padding: 10% 0;
+
+    }
+
+    .our_location_content {
+        padding: 2% 5%;
+    }
+
+    /* meals --------------------------------------------------------------------------- */
+
+    .meals {
+        text-align: center;
+        margin: 1rem 5%;
+    }
+
+    /* Contact Information ------------------------------------------------------------- */
+
+    .contact_information_map {
+        padding: 10% 0;
+    }
+
+    /* Information ----------------------------------------------------------------------- */
+
+    .information {
+        padding: 5% 5%;
+    }
+
+    .info {
+        width: 42%;
+        margin: 0 4%;
+        float: left;
+    }
+}
+
+/* media max-width:1300px ------------------------------------------------------------------- */
+/* media max-width:1300px ------------------------------------------------------------------- */
+/* media max-width:1300px ------------------------------------------------------------------- */
+
+@media screen and (min-width:993px) and (max-width:1300px) {
+
+    /* Nav Bar ----------------------------------------------------------------- */
+
+    .navbar_img {
+        width: 40%;
+    }
+
+    .navbar_img img {
+        margin: 10px 30%;
+        width: 100px;
+    }
+
+    .navbar_content {
+        width: 60%;
+    }
+
+    .navbar_content ul li {
+        margin: 0 3%;
+    }
+
+    /* Main View ----------------------------------------------------------------- */
+
+    .main_content {
+        box-sizing: border-box;
+        padding: 20vh 10%;
+    }
+
+    .main_content h1 {
+        font-size: 4rem;
+    }
+
+    .main_content button a {
+        text-decoration: none;
+        font-size: 1.25rem;
+        color: white;
+    }
+
+    /* Who We Are? ----------------------------------------------------------------- */
+
+    .Who_we_are_content {
+        padding: 2% 5%;
+    }
+
+    /* Our Location ----------------------------------------------------------------- */
+
+    .our_location_content {
+        padding: 2% 5%;
+    }
+
+    /* meals ---------------------------------------------------------------------- */
+
+    .meals {
+        text-align: center;
+        margin: 1rem 5%;
+    }
+}
+
+/* media Print ------------------------------------------------------------------- */
+/* media Print ------------------------------------------------------------------- */
+/* media Print ------------------------------------------------------------------- */
+
+@media print {
+    html {
+        font-size: 14px;
+    }
+
+    /* Nav Bar ----------------------------------------------------------------- */
+
+    .navbar {
+        display: none;
+    }
+
+    /* Right Bar ----------------------------------------------------------------- */
+
+    .right_bar {
+        display: none;
+    }
+
+    /* Main View ----------------------------------------------------------------- */
+
+    .main_view {
+        display: none;
+    }
+
+    /* Who We Are? ----------------------------------------------------------------- */
+    
+    .Who_we_are {
+        height: 50vh;
+    }
+
+    .Who_we_are_img {
+        display: none;
+    }
+
+    .Who_we_are_content {
+        width: 90%;
+        max-height: 50vh;
+        padding: 1rem 5%;
+        text-align: left;
+    }
+
+    /* Our Location ----------------------------------------------------------------- */
+
+    .our_location {
+        height: 50vh;
+    }
+
+    .our_location_img {
+        display: none;
+    }
+
+    .our_location_content {
+        width: 90%;
+        max-height: 50vh;
+        padding: 1rem 5%;
+        text-align: left;
+    }
+
+    /* meals ----------------------------------------------------------------- */
+
+    .meals {
+        display: none;
+    }
+
+    /* Contact Information ------------------------------------------------------------- */
+
+    .contact_information {
+        height: 100vh;
+    }
+
+    .contact_information_map {
+        display: none;
+    }
+
+    .contact_information_content {
+        width: 90%;
+        padding: 0 5%;
+        text-align: left;
+    }
+
+    .contact_information_content p {
+        margin: 80px 0;
+    }
+
+    .contact_information_content ul li {
+        margin: 80px 0;
+    }
+}
+/* ----------------------------------------------------------------------------- */
+/* Footer ---------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------- */
+
+.footer_logo{
+    width: 200px;
+    height: 200px;
+    transition: all 0.5s;
+    border: solid black 1px;
+}
+
+.footer_logo:hover{
+    border: solid blueviolet 10px;
+}
+
+/* ----------------------------------------------------------------------------- */
+/* Shared ---------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------- */
+
+.Pointer{
+    cursor: pointer;
+}
+
+.a_None{
+    text-decoration: none;
+}
+
+.SM-BTN-icon{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    border: solid black 3px;
+    transition: transform 0.75s;
+}
+.SM-BTN-icon:hover{
+    border: solid white 2px;
+    transform: scale(1.25);
+}
+
+.GitHub{
+    color: black;
+}
+
+.LinkedIn{
+    color: #0366C3;
+}
+
+.Facebook{
+    color: #1877F2;
+}
+
+.Twitter{
+    color: #1877F2;
+}
+
+.Instagram{
+    color: #E8067F;
+}
+
+.Youtube{
+    color: red;
+}
+
+.TikTok{
+    color: black;
+}
